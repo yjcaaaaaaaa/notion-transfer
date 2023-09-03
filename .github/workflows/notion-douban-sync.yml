@@ -4,6 +4,7 @@
 name: Sync Douban to Notion
 
 on:
+  workflow_dispatch: # manual trigger
   push:
     branches: [ "master" ]
   pull_request:
