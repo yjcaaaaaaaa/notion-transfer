@@ -42,7 +42,7 @@ class DoubanNotionSync(object):
             return datetime.fromisoformat(last_sync_time)
         else:
             # return datetime.fromisoformat("2006-01-01T00:00:00")
-            return datetime.now().replace(tzinfo=timezone(timedelta(hours=8))) - timedelta(days=8)
+            return datetime.now().replace(tzinfo=timezone(timedelta(hours=8))) - timedelta(days=90)
 
     def _save_last_sync_time(self):
         # with open("last_sync_time.txt", "w") as f:
